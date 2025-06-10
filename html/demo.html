@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tagore University</title>
+  <link rel="stylesheet" href="demo.css">
+   <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <!-- Font Awesome CSS correct link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <img src="/image/tacs.jpg" alt="Tagore University Logo" />
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">COURSE</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="text-box">
+      <h1>Tagore University</h1>
+      <p>Empowering minds through education and innovation</p>
+      <a href="#" class="hero-btn">Visit Us to Know More</a>
+    </div>
+  </section>
+
+  <!-- Course Section -->
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Explore a range of career-focused courses across streams</p>
+
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Build a strong academic base with our Higher Secondary programs.</p>
+      </div>
+      <div class="course-col">
+        <h3>Undergraduate</h3>
+        <p>Choose from a wide range of bachelor's degree programs to suit your passion.</p>
+      </div>
+      <div class="course-col">
+        <h3>Postgraduate</h3>
+        <p>Advance your knowledge and skills with specialized postgraduate programs.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function showMenu() {
+      document.getElementById("navLinks").style.right = "0";
+    }
+
+    function hideMenu() {
+      document.getElementById("navLinks").style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
